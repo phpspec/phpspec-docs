@@ -384,7 +384,7 @@ PHPSpec Matchers
 |                                       | content, or other metrics generally associated with two items      |
 |                                       | being equivalent.                                                  |
 +---------------------------------------+--------------------------------------------------------------------+
-| bool beTrue (null $expected)          | Matches the actual value against TRUE.                             |
+| bool beTrue (null $expected)          | Matches the actual value against ``TRUE``.                         |
 +---------------------------------------+--------------------------------------------------------------------+
 | bool beFalse (null $expected)         | Matches the actual value against ``FALSE``.                        |
 +---------------------------------------+--------------------------------------------------------------------+
