@@ -1,7 +1,45 @@
-docbook docs (in linux) can be built into html using the xmlto program, with the following syntax:
+Contributing to documentation
+=============================
 
-bash$ xmlto html /path/to/source
+Intro
+-----
 
-e.g.:
-bash$ xmlto html -o /var/www/phpspec/ phpspec/docs/manual/en/manual.xml
+It is good everyone contributes with documentation.
+We use sphinx and some custom styling to have offline/online documentation and automate things so that anyone can easily write rst format which is almost like markdown to write up documentation for just about anything.
 
+``rst`` extension stands for restructured format. This short page is written in ``rst`` for your example.
+
+Setting things up
+-----------------
+
+I follow the instructions from this `link <http://symfony.com/doc/current/contributing/documentation/format.html>`_.
+
+Which basically tells us to install with the following command:
+
+``$ sudo easy_install -U Sphinx``
+
+How to contribute
+-----------------
+
+To clone the doc repos do:
+
+.. code-block:: bash
+
+    $ git clone github.com/phpspec/phpspec-docs.git
+
+Do your changes, commit, and push to your own fork on github, then send a PR to the main repo.
+
+How to compile
+--------------
+
+To test or have an off line version of documentation you will just run:
+
+.. code-block:: bash
+
+    $ make html
+
+Make sure your syntax is correct by following the error messages if any.
+
+The idea is that everything needs to get documented properly as it is very easy to write rst on the fly.
+
+That is it! PHPSpec FTW!
