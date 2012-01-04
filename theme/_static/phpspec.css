@@ -167,42 +167,67 @@ body {
   font-family: 'Trebuchet MS';
   background: #D3D1BA url(images/skel/bg.jpg) repeat-x top left;
 }
-body > header, body > section, body > footer {
-  clear: left;
-  width: 840px;
-  padding: 60px;
-  margin: 0px auto;
+
+#top_menu {
+    background-color: #000;
+    color: #97925B;
+    height: 40px;
+    font-family: Arial;
+    font-size: 14px;
 }
-body > header > nav {
-  float: left;
-  margin-top: 34px;
-  margin-left: 20px;
+
+#top_menu ul {
+     margin: 0px;
+     padding-top: 8px;
+     padding-left: 120px;
+     list-style: none;
 }
-body > header > nav li {
-  float: left;
-  margin: 0px 2px;
-  padding: 2px 7px;
+
+#top_menu ul li {
+     display: inline;
+     margin-left: 30px;
 }
-body > header > nav li a {
-  display: block;
-  color: #CC6;
-  font-family: 'Lobster', arial, serif;
-  font-size: 20px;
-  text-decoration: none;
+
+#top_menu ul li a {
+  color: #cc6;
+  font-family: "Lucida Sans", "Trebuchet MS", "Arial";
+  font-size: 14px;
 }
-body > header > nav li a:hover {
-  color: #CCC;
+
+#top_menu ul li a:hover {
+  color:#97925B;
 }
-body > header > nav li.active {
-  background: url(images/skel/menu-bg.png);
-  -moz-transform: skew(-10deg);
-  -webkit-transform: skew(-10deg);
+
+#lang_menu {
+  position:absolute;
+  top: 135px;
+  right: 30px;
+  color:#fff;
 }
-body > header > nav li.active a {
-  color: #fff;
-  -moz-transform: skew(10deg);
-  -webkit-transform: skew(10deg);
+
+#lang_menu a {
+  color: #cc6;
 }
+
+#lang_menu a:hover {
+  color: #97925B;
+}
+
+#header {
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	color: #cc6;
+	width: auto;
+	background-color: #41411F;
+	background-image: url(images/logo.png);
+}
+
+#header h1 {
+    font-size: 26px;
+}
+
 body > section.main > dl {
   background: url(images/skel/content-splitter.png) 465px -30px no-repeat;
   min-height: 228px;
@@ -349,61 +374,61 @@ body > section.main > dl .preview dl dd .info {
   background: #000;
   opacity: 0.5;
 }
-body > footer {
-  position: relative;
-  padding-bottom: 0px;
-  padding-top:0px;
 
-  /*border-top:1px solid #2a2a2a;
-  padding-top:40px;*/
+#footer {
+  clear: left;
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  background-color: #41411F;
+  border-top: #000 solid 6px;
+  color: #fff;
+  font-size: 13px;
 }
-body > footer dl {
-  float: left;
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 20px;
-}
-body > footer dl dt {
-  color: #323232;
-  font-family: 'Lobster', arial, serif;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-body > footer dl dd {
-  margin-bottom: 3px;
-}
-body > footer dl dd a {
-  color: #636363;
-  font-size: 14px;
-  font-weight: normal;
+
+#footer a {
+  color: #D3D1BA;
   text-decoration: none;
 }
-body > footer dl dd a:hover {
-  text-decoration: underline;
+
+#footer a:hover {
+  color: #F3F1DA;
 }
-body > footer .clear {
-  clear: both;
+
+.footer_columns {
+  margin-top: 40px;
+  width: 860px;
+  margin-left: auto;
+  margin-right: auto;
 }
-body > footer .sponsor {
-  position: absolute;
-  right: 70px;
-  bottom: 25px;
-  width: 170px;
+
+.footer_column {
+  width: 230px;
+  float: left;
+  margin-right: 25px;
 }
-body > footer .sponsor span {
-  color: #323232;
-  font-family: 'Lobster', arial, serif;
-  font-size: 18px;
-  position: absolute;
-  bottom: 0px;
+
+#footer ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 7px;
+  padding-top: 7px;
+  border-top: 1px solid #61613F;
 }
-body > footer .sponsor a.knp {
-  content: '';
-  opacity:0.3;
-  text-indent: -9999px;
-  float: right;
-  border: none;
-  width: 72px;
-  height: 71px;
-  background: url(images/skel/knp-logo.png);
+
+#footer ul li {
+  margin: 0px;
+  padding: 0px;
+  line-height: 180%;
+}
+
+.copyright {
+  clear: left;
+  padding-top: 15px;
+  width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 12px;
 }
