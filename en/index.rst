@@ -71,15 +71,3 @@ Acknowledgements
 There are a lot of people to thank. I'll list names later. Obviously
 we profusely thank the many people who have developed the BDD
 approach!
-
-.. toctree::
-    :maxdepth: 2
-    :numbered
-
-    before-we-get-started
-    installing-phpspec
-    getting-started
-    introduction
-    phpspec-goals
-    writing-specs
-    execution-methods
