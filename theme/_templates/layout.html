@@ -21,20 +21,24 @@
       </div>
     </div>
 
-    <section class="docs">
+<div id="maincontainer">
+  <div id="contentwrapper">
+    <div id="contentcolumn">
+      <div class="innertube">
+        {% block body %}{% endblock %}
+      </div>
+    </div>
+  </div>
+  <div id="rightcolumn">
+    <div class="innertube">
+        {%- block sidebartoc %} 
+        {%- include "localtoc.html" %} 
+        {%- endblock %}
+    </div>
+  </div>
+</div> 
 
-        <nav class="toc">
-            <h3>Table of Contents</h3>
-            {{ toctree }}
-        </nav>
-
-        <section class="documentation">
-            {% block body %}{% endblock %}
-        </section>
-
-    </section>
-
-    <div id="footer">
+<div id="footer">
  <div class="footer_columns">
   <div class="footer_column">
    <div class="footer_column_title">Documentation</div>

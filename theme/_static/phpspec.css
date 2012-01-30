@@ -1,171 +1,13 @@
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
 body {
-  line-height: 1;
+	line-height: 160%;
+	font-family: "Trebuchet MS";
+	margin: 0px;
+	color: #41411F;
+	background-color: #D3D1BA;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-nav ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-del {
-  text-decoration: line-through;
-}
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
-input, select {
-  vertical-align: middle;
-}
-#logo {
-  content: '';
-  text-indent: -9999px;
-  float: left;
-  width: 168px;
-  height: 57px;
-  background: url(images/skel/logo.png);
-}
-body {
-  color: #41411F;
-  font-family: 'Trebuchet MS';
-  background: #D3D1BA url(images/skel/bg.jpg) repeat-x top left;
+
+table tr td, table tr th {
+    border: 1px solid #000;
 }
 
 #top_menu {
@@ -228,151 +70,80 @@ body {
     font-size: 26px;
 }
 
-body > section.main > dl {
-  background: url(images/skel/content-splitter.png) 465px -30px no-repeat;
-  min-height: 228px;
+#maincontainer{
+width: 100%;
+margin: 0 auto;
 }
-body > section.main > dl p {
-  font-size: 15px;
-  line-height: 24px;
+
+#topsection{
+background: #EAEAEA;
+height: 90px;
 }
-body > section.main > dl dt h1, body > section.main > dl dt h2 {
-  margin-bottom: 10px;
-  color: #b7b7b7;
-  font-size: 20px;
-  font-weight: normal;
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
 }
-body > section.main > dl dt h1 span, body > section.main > dl dt h2 span {
-  color: #fff;
+
+#contentwrapper{
+float: left;
+width: 100%;
 }
-body > section.main > dl dt h1 span.behat, body > section.main > dl dt h2 span.behat {
-  font-family: 'Lobster', arial, serif;
-  margin-right: 5px;
-  font-size: 28px;
+
+#contentcolumn{
+margin-right: 400px;
+padding-top: 20px;
+padding-right: 50px;
+padding-left: 50px;
 }
-body > section.main > dl .intro {
-  float: left;
-  width: 445px;
-  padding-right: 20px;
+
+#rightcolumn{
+float: left;
+width: 360px;
+margin-left: -400px;
+background: #000;
+border: 20px #000 solid;
+color: #fff;
 }
-body > section.main > dl dt.install {
-  margin-top: -30px;
+
+#rightcolumn a {
+  color: #cc6;
 }
-body > section.main > dl dd.install {
-  margin-bottom: 40px;
+
+#rightcolumn a:hover {
+  color:#97925B;
 }
-body > section.main > dl .install {
-  float: right;
-  width: 350px;
+
+.ident {
+  padding-left: 10px;
 }
-body > section.main > dl .install pre {
-  float: left;
-  width: 320px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 15px 10px;
-  font-family: Courier;
-  font-size: 12px;
-  color: #000;
-  -moz-border-radius: 0px 10px 0px 10px;
-  -webkit-border-radius: 0px 10px 0px 10px;
-  border-radius: 0px 10px 0px 10px;
-  background: #fff;
+.ident2 {
+  padding-left: 20px;
 }
-body > section.main > dl .install pre .prompt {
-  color: #d03e3c;
+
+.before_paragraph {
+  line-height: 260%;
 }
-body > section.main > dl .install pre.pear {
-  background: #ffffff url(images/skel/install-pear.jpg) no-repeat left bottom;
+
+pre {
+font-family: "Monaco", "Courier New", Courier, monospace;
+font-size: 13px;
+background-color: #908C62;
+color: #fff;
+width: 99%;
+overflow: auto;
+padding: 9px;
 }
-body > section.main > dl .install pre.github {
-  background: #ffffff url(images/skel/install-github.jpg) no-repeat left bottom;
-}
-body > section.main > dl .preview {
-  float: left;
+
+#footer {
+  clear: left;
+  margin-top: 30px;
   width: 100%;
-}
-body > section.main > dl .preview dl {
-  width: 830px;
-  background: red;
-  position: relative;
-  margin-top: 20px;
-}
-body > section.main > dl .preview dl dt {
-  position: relative;
-  float: left;
-  z-index: 3;
-  width: 180px;
-  cursor: pointer;
-  margin-right: 630px;
-  padding: 10px;
-}
-body > section.main > dl .preview dl dt h3 {
-  position: relative;
+  height: 300px;
+  background-color: #41411F;
+  border-top: #000 solid 6px;
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-}
-body > section.main > dl .preview dl dt h3 span {
-  float: left;
-  width: 100%;
-  margin-top: 5px;
-  color: #8b8b8b;
-  font-size: 12px;
-  font-weight: normal;
-}
-body > section.main > dl .preview dl dt:hover {
-  background: #313131;
-}
-body > section.main > dl .preview dl dt.active {
-  background: #ccc;
-}
-body > section.main > dl .preview dl dt.active h3, body > section.main > dl .preview dl dt.active span {
-  color: #000 !important;
-}
-body > section.main > dl .preview dl dt.active:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: -11px;
-  top: 15px;
-  width: 20px;
-  height: 20px;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background: #ccc;
-}
-body > section.main > dl .preview dl dd {
-  display: none;
-  position: absolute;
-  width: 570px;
-  height: 235px;
-  top: -10px;
-  right: 0px;
-  padding: 20px 30px;
-  background: #fff;
-  -moz-border-radius: 0px 10px 0px 10px;
-  -webkit-border-radius: 0px 10px 0px 10px;
-  border-radius: 0px 10px 0px 10px;
-}
-body > section.main > dl .preview dl dd pre {
-  color: #000;
-  font-size: 16px;
-}
-body > section.main > dl .preview dl dd.active {
-  display: block;
-}
-body > section.main > dl .preview dl dd .info {
-  float: right;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  padding: 10px 15px;
-  color: #fff;
-  font-size: 18px;
-  background: #000;
-  opacity: 0.5;
+  font-size: 13px;
 }
 
 #footer {
