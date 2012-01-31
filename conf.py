@@ -260,3 +260,5 @@ epub_copyright = u'2012, PHPSpec Team'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
+
+html_add_permalinks = None
