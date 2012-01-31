@@ -128,8 +128,8 @@ color: #fff;
 pre {
 font-family: "Monaco", "Courier New", Courier, monospace;
 font-size: 13px;
-background-color: #908C62;
-color: #fff;
+background-color: #B0AC82;
+color: #41411F;
 width: 99%;
 overflow: auto;
 padding: 9px;
@@ -202,4 +202,31 @@ padding: 9px;
   margin-right: auto;
   text-align: center;
   font-size: 12px;
+}
+
+.navlink {
+  width:100%;
+  text-align:right;
+}
+
+.navlink a {
+  color: #97925B; 
+  font-family: "Trebuchet MS";
+}
+
+
+.highlight .s1 {
+color: green; !important
+}
+
+.highlight .na {
+color: #633000; !important
+}
+
+.highlight .o {
+color: #A35C00; !important
+}
+
+.highlight .mi {
+color: #CF0000; !important
 }
