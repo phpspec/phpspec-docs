@@ -1,6 +1,6 @@
 {% extends "!layout.html" %}
 
-{% set css_files = css_files + ['_static/phpspec.css', 'http://fonts.googleapis.com/css?family=Lobster'] %}
+{% set css_files = css_files + ['_static/phpspec.css'] %}
 
 {% block content %}
     <div id="top_menu">
@@ -39,7 +39,7 @@
           {% endif %}
           
         {% block body %}{% endblock %}
-        
+
         {% if pagename != 'index' %}
         <div class="navlink">
         {% if prev %}
@@ -59,7 +59,7 @@
     <div class="innertube">
         <h2>Table of Contents</h2>
         {%- block sidebartoc %} 
-        {{toc}}
+        {{ toctree(maxdepth = -1) }}
         {%- endblock %}
     </div>
   </div>
