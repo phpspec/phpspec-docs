@@ -1,10 +1,41 @@
 Installation
 ============
 
-PHPSpec should be installed using the PEAR Installer. PEAR (PHP
+PHPSpec has different ways of installing. One of the ways is Composer and
+the other is through PEAR Installer. `Composer <http://packagist.org/about-composer>`_ helps
+you manage easily your project dependencies. PEAR (PHP
 Extension and Application Respository) is a simple, easy to use mechanism
 for distributing and managing PEAR packages. If you have PHP installed,
 chances are you already have a PEAR system ready to be utilised.
+
+Installing PHPSpec with Composer
+--------------------------------
+
+The install for composer on your project is simply:
+
+.. code-block:: bash
+
+    wget http://getcomposer.org/composer.phar
+
+Then we tell composer the dependency on phpspec via a composer.json file containing:
+
+.. code-block:: bash
+
+    {
+        "config": { "bin-dir": "." },
+        "require": {
+            "php": ">=5.3.2",
+            "phpspec/phpspec": "master"
+        }
+    }
+
+And then we install with:
+
+.. code-block:: bash
+
+    php composer.phar install
+
+Now you can use the generated script phpspec-composer.php
 
 Installing PHPSpec with PEAR
 ----------------------------
