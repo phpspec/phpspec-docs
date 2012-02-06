@@ -1,23 +1,22 @@
 インストール
 ============
 
-PHPSpec has different ways of installing. One of the ways is Composer and
-the other is through PEAR Installer. `Composer <http://packagist.org/about-composer>`_ helps
-you manage easily your project dependencies.
+PHPSpec にはいくつかのインストール方法があります。Composer を使う方法と、PEAR インストーラを使う方法です。
+`Composer <http://packagist.org/about-composer>`_ は、プロジェクトの依存関係の管理を容易にする仕組みのことです。
 PEAR (PHP Extension and Application Respository)
 とは、PEAR パッケージの管理や配布を簡単に行うための仕組みのことです。
 PHP がインストールされていれば、既に PEAR システムも利用できるようになっているでしょう。
 
-Installing PHPSpec with Composer
+Composer を使用した PHPSpec のインストール
 --------------------------------
 
-The install for composer on your project is simply:
+composer をプロジェクトに導入するには、単純に次のようにするだけです。
 
 .. code-block:: bash
 
     wget http://getcomposer.org/composer.phar
 
-Then we tell composer the dependency on phpspec via a composer.json file containing:
+そして、composer に対して phpspec の依存関係を指示するため、composer.json ファイルに次のように記述します。
 
 .. code-block:: bash
 
@@ -29,13 +28,13 @@ Then we tell composer the dependency on phpspec via a composer.json file contain
         }
     }
 
-And then we install with:
+phpspec をインストールするには、このようにします。
 
 .. code-block:: bash
 
     php composer.phar install
 
-Now you can use the generated script phpspec-composer.php
+これで phpspec-composer.php というスクリプトが生成されるので、このスクリプトを使います。
 
 PEAR を使用した PHPSpec のインストール
 ------------------------------------
